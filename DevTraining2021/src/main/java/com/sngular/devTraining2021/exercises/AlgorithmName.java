@@ -18,7 +18,7 @@ public class AlgorithmName {
 		} else {
 			// creao un array
 			String[] array = str.split("");
-			// esta lista tendre elementos unicos, cuando termine de convertir mi array
+			//  convertir mi array, y devuelvo elemento unicos, 
 			Set<String> set = new HashSet<String>(Arrays.asList(array));
 			// si el tamaño es igual a la cadena original tons la ponemos como isograma
 			if (str.length() == set.size()) {
@@ -29,4 +29,5 @@ public class AlgorithmName {
 		}
 
 	}
+
 }
