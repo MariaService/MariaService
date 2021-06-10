@@ -1,22 +1,17 @@
-# DevTraining2021
+On this repository, I publish a Exercise of Algorithms on java, for ech one of exercises you need to use the next command lines:
 
-On this repository, I publish a Exercise of Algorithms on java, for ech one of exercises you need to use the next 
-command lines:
+Clean project - mvn clean
+Test the algorithm with Test Unit - mvn test
+Notes:
 
-* Clean project - mvn clean
-* Test the algorithm with Test Unit - mvn test
+On te creation of projects, we use Apache maven v 3.6.1
+This examples use JUnit Lib v4.13.1
+ACCUM
 
-**Notes:** 
-* On te creation of projects, we use Apache maven v 3.6.1 
-* This examples use JUnit Lib  v4.13.1
+Program the accum function, which has the behavior of the following examples, that complies with the test cases defined in the AccumClsTest class.
 
-**ORDER Numbers**
+Examples:
 
-The task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially rearrange the digits to create the highest number possible.
-
-> Example:
-
-* orderNumbers(21445) -> 54421
-* orderNumbers(145263) -> 654321
-* orderNumbers(1254859723) -> 9875543221
-
+accum("abcd") -> A-Bb-Ccc-Dddd
+accum("RqaEzty") -> R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy
+accum("cwAt") -> C-Ww-Aaa-Tttt
