@@ -1,36 +1,32 @@
 package com.sngular.devTraining2021.exercises;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public class AlgorithmName {
-	public static int orderNumber(int number) {
-		// Implements the function with the algorithm
 
-		String numbers = String.valueOf(number);
-		// descomposicion de digitos
-		char[] a = numbers.toCharArray();
-		int size = a.length;
-		Integer[] arr = new Integer[size];
+	public static boolean isIsogram(String str) {
 
-		for (int i = 0; i < size; i++) {
-			// llenamos ya descompuesto
-			arr[i] = Integer.parseInt(String.valueOf(a[i]));
+//		buscar concurrencias 
+//		stexto = stexto.substring(stexto.indexof(
+//			      stextobuscado)+stextobuscado.length(),stexto.length());
+
+		str = str.toLowerCase();
+		if (str.equals("")) {
+			return true;
+		} else {
+			// creao un array
+			String[] array = str.split("");
+			// esta lista tendre elementos unicos, cuando termine de convertir mi array
+			Set<String> set = new HashSet<String>(Arrays.asList(array));
+			// si el tamaño es igual a la cadena original tons la ponemos como isograma
+			if (str.length() == set.size()) {
+				return true;
+			} else {
+				return false;
+			}
 		}
-		ArrayList<Integer> integerArray = new ArrayList<>();
-		
-		// metodo de ordenacion desecente
-		Arrays.sort(arr, Collections.reverseOrder());
-		for (int numeros : arr) {
-			// guardamos en array de integers
-			integerArray.add(numeros);
-		}
-		// limpiamos la cadena
-		String s = integerArray.toString();
-		String strOfInts = s.replaceAll("\\[|\\]|,|\\s", "");
-		// devolvemos el tipo de dato en int
-		long veryLongNumber = Long.parseLong(strOfInts);
-		return (int) veryLongNumber;
+
 	}
 }
