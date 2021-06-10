@@ -8,17 +8,15 @@ import org.junit.Test;
 import com.sngular.devTraining2021.exercises.AlgorithmName;
 
 public class TestsCasesAlgorithmName {
-	@Test
-	public void test() {
-
-		assertEquals(985543221, AlgorithmName.orderNumber(125485923));
-		assertEquals(998765432, AlgorithmName.orderNumber(346789925));
-		assertEquals(98765432, AlgorithmName.orderNumber(29384756));
-		assertEquals(987654321, AlgorithmName.orderNumber(514978236));
-		assertEquals(987654321, AlgorithmName.orderNumber(123456789));
-		assertEquals(987654321, AlgorithmName.orderNumber(1234567891));
-
-	}
+    @Test
+    public void test() {
+        //Implement tests cases
+        assertEquals("Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu",AlgorithmName.accum("ZpglnRxqenU"));
+        assertEquals("N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb",AlgorithmName.accum("NyffsGeyylB"));
+        assertEquals("M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu",AlgorithmName.accum("MjtkuBovqrU"));
+        assertEquals("E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm",AlgorithmName.accum("EvidjUnokmM"));
+        assertEquals( "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc",AlgorithmName.accum("HbideVbxncC"));
+    }
 
 
 }
