@@ -12,10 +12,14 @@ public class TestsCasesAlgorithmName {
 	public void test() {
 
 
-	    assertEquals(985543221, AlgorithmName.orderNumber(125485923));
-        assertEquals(998765432, AlgorithmName.orderNumber(346789925));
-        assertEquals(98765432, AlgorithmName.orderNumber(29384756));
-        assertEquals(987654321, AlgorithmName.orderNumber(514978236));
+	    assertEquals(true, AlgorithmName.isIsogram("Dermatoglyphics"));
+        assertEquals(true, AlgorithmName.isIsogram("isogram"));
+        assertEquals(false, AlgorithmName.isIsogram("moose"));
+        assertEquals(false, AlgorithmName.isIsogram("isIsogram"));
+        assertEquals(false, AlgorithmName.isIsogram("aba"));
+        assertEquals(false, AlgorithmName.isIsogram("moOse"));
+        assertEquals(true, AlgorithmName.isIsogram("thumbscrewjapingly"));
+        assertEquals(true, AlgorithmName.isIsogram(""));
 
 	}
 

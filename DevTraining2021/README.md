@@ -10,13 +10,11 @@ command lines:
 * On te creation of projects, we use Apache maven v 3.6.1 
 * This examples use JUnit Lib  v4.13.1
 
-**ORDER Numbers**
+> **Isogram**
 
-The task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially rearrange the digits to create the highest number possible.
+An isogram is a word that has no repeating, consecutive, or non-consecutive letters. Implement a function that determines whether a string containing only letters is an isogram. Suppose the empty string is an isogram. Ignore upper and lower case.
 
 > Example:
-
-* orderNumbers(21445) -> 54421
-* orderNumbers(145263) -> 654321
-* orderNumbers(1254859723) -> 9875543221
-
+* isIsograma("dermatoglyphics") -> true
+* isIsograma("mooose") -> false
+* isIsograma("aba") -> false
