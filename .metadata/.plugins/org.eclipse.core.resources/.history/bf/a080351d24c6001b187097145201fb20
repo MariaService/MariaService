@@ -1,0 +1,21 @@
+package com.sngular.devTraining2021.exercises;
+
+public class AlgorithmName {
+	public static String accum(String str) {
+		// your code
+		char[] c = str.toCharArray();
+		for (int i = 0; i < c.length; i++) {
+			System.out.print((c[i]));
+			acumulador(i, c[i], c[i]);
+
+		
+			System.out.print(c.length);
+		}
+
+		return null;
+	}
+
+	public static void acumulador(int pos, char l, char letraCapital) {
+		System.out.println(pos+1);
+	}
+}

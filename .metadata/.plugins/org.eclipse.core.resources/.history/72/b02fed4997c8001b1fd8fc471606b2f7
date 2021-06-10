@@ -1,0 +1,20 @@
+package com.sngular.devTraining2021.exercises;
+
+class Lampara {
+	private String color;
+
+	
+	public void Lampara(String color) {
+		this.color = color;
+	}
+
+}
+
+public class LamparaCreator {
+
+	public static void main(String[] args) {
+		Lampara lampara = new Lampara();
+		lampara.Lampara("rojo");
+	}
+	 
+}

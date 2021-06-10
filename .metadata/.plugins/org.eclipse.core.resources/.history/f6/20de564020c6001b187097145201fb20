@@ -1,0 +1,13 @@
+package com.sngular.devTraining2021.exercises;
+
+public class AlgorithmName {
+    public static String accum(String str) {
+        // your code
+    	char[] c = str.toCharArray();
+    	for(int i=0; i<c.length; i++) {
+    		System.out.println((c[i]));
+    	}
+    	
+    	return null;
+    }
+}

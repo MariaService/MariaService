@@ -1,0 +1,31 @@
+package com.sngular.devTrining2021.test.exercises;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class TestsCasesAlgorithmName {
+    @Test
+    public void test() {
+        assertEquals(true, AlgorithmName.isIsogram("Dermatoglyphics"));
+        assertEquals(true, AlgorithmName.isIsogram("isogram"));
+        assertEquals(false, AlgorithmName.isIsogram("moose"));
+        assertEquals(false, AlgorithmName.isIsogram("isIsogram"));
+        assertEquals(false, AlgorithmName.isIsogram("aba"));
+        assertEquals(false, AlgorithmName.isIsogram("moOse"));
+        assertEquals(true, AlgorithmName.isIsogram("thumbscrewjapingly"));
+        assertEquals(true, AlgorithmName.isIsogram(""));
+    }
+    
+    public void tes() {
+    	  char data[] = {'a', 'b', 'c'};
+    	     String str = new String(data);
+    	     char str1[] = ("geeksforgeeks").toCharArray();
+    	        char str2[] = ("forgeeksgeeks").toCharArray();
+    	  
+    	     System.out.println("abc");
+    	     String cde = "cde";
+    	     System.out.println("abc" + cde);
+    	     String c = "abc".substring(2,3);
+    	     String d = cde.substring(1, 2);
+    }
+}

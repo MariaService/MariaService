@@ -1,0 +1,12 @@
+package com.sngular.devTraining2021.exercises;
+
+class Atom{
+	public Atom() {
+		// TODO Auto-generated constructor stub
+
+	System.out.println("atom");
+	}
+}
+public class Mountain {
+
+}

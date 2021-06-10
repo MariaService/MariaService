@@ -1,0 +1,27 @@
+package com.sngular.devTraining2021.exercises;
+
+public class AlgorithmName {
+	public static String accum(String str) {
+		// your code
+		acumulador(str);
+
+		return null;
+	}
+
+	public static void acumulador(String l) {
+		// char capita = Character.toUpperCase(l);
+		// String sopaLetras = String.valueOf(capita);
+		/* for ***/
+		String ca = "";
+		for (int x = 0; x < l.length(); x++) {
+			// System.out.println("Caracter " + x + ": " + l.charAt(x));
+			ca = ca + l.charAt(x);
+			StringBuilder sb = new StringBuilder();
+
+			sb.append(l.charAt(x)).append("-").append("").toString();
+			System.out.println(sb);
+
+		}
+
+	}
+}

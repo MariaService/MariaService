@@ -1,0 +1,22 @@
+package com.sngular.devTraining2021.exercises;
+
+public class AlgorithmName {
+	public static String accum(String str) {
+		// your code
+		char[] c = str.toCharArray();
+		for (int i = 0; i < c.length; i++) {
+			acumulador(i, c[i]);
+		}
+
+		return null;
+	}
+
+	public static void acumulador(int pos, char l, char letraCapital) {
+	char capita=	 Character.toUpperCase(letraCapital);
+		System.out.println( capita );
+		System.out.println();
+		System.out.print(l);
+		
+		
+	}
+}
