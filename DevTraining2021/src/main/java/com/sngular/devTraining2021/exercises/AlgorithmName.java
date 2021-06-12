@@ -2,8 +2,18 @@ package com.sngular.devTraining2021.exercises;
 
 public class AlgorithmName {
     //Implements the function with the algorithm
+  
     public static int findEvenIndex(int[] arr) {
-        // your code
-    	return 0;
+        int index;
+        int sumLeft;
+        int sumRight;
+        index = 0;
+        while (index++ < arr.length - 1) {
+            sumLeft = sumRight = 0;
+            for (int i = 0; i < index; i++) sumLeft += arr[i];
+            for (int j = arr.length - 1; j > index; j--) sumRight += arr[j];
+            if (sumLeft == sumRight) return index;
+        }
+        return -1;
     }
 }
