@@ -1,35 +1,21 @@
 
 package com.sngular.devTrianing2021.exercises;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
-import java.util.Random;
-
-import org.junit.Before;
 import org.junit.Test;
 
 import com.sngular.devTraining2021.exercises.AlgorithmName;
 
 public class TestsCasesAlgorithmName {
-    private Random rand;
-
-    @Before
-    public void initTest() {
-        rand = new Random();
-    }
-
-    @Test
-    public void testExampleCases() {
-     assertArrayEquals(new int[]{1,5}, AlgorithmName.minMax(new int[]{1,2,3,4,5}));
-      assertArrayEquals(new int[]{5, 2334454}, AlgorithmName.minMax(new int[]{2334454,5}));
-       assertArrayEquals(new int[]{1, 1}, AlgorithmName.minMax(new int[]{1}));
-    }
-
-    @Test
-    public void minMaxRandomTest() {
-        for(int i = 0; i < 20; i++) {
-            int r = rand.nextInt();
-            assertArrayEquals(new int[]{r, r}, AlgorithmName.minMax(new int[]{r}));
-        }
-    }
+	 @Test
+	    public void test() {
+	        assertEquals(3,AlgorithmName.findEvenIndex(new int[] {1,2,3,4,3,2,1}));
+	        assertEquals(1,AlgorithmName.findEvenIndex(new int[] {1,100,50,-51,1,1}));
+	        assertEquals(-1,AlgorithmName.findEvenIndex(new int[] {1,2,3,4,5,6}));
+	        assertEquals(3,AlgorithmName.findEvenIndex(new int[] {20,10,30,10,10,15,35}));
+	        assertEquals(-1,AlgorithmName.findEvenIndex(new int[] {-8505, -5130, 1926, -9026}));
+	        assertEquals(1,AlgorithmName.findEvenIndex(new int[] {2824, 1774, -1490, -9084, -9696, 23094}));
+	        assertEquals(6,AlgorithmName.findEvenIndex(new int[] {4, 5, 6, 7, 8, 9, 10, 9, 8, 7, 6, 5, 4}));
+	    }
 }
