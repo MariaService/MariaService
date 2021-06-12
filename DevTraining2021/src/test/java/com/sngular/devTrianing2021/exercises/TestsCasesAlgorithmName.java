@@ -11,6 +11,7 @@ public class TestsCasesAlgorithmName {
 	@Test
 	public void test() {
 
+
 	     assertEquals(true, AlgorithmName.isIsogram("Dermatoglyphics"));
 	        assertEquals(true, AlgorithmName.isIsogram("isogram"));
 	        assertEquals(false, AlgorithmName.isIsogram("moose"));
