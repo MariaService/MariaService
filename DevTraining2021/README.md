@@ -10,13 +10,15 @@ command lines:
 * On te creation of projects, we use Apache maven v 3.6.1 
 * This examples use JUnit Lib  v4.13.1
 
-**ORDER Numbers**
+> MinMax
 
-The task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially rearrange the digits to create the highest number possible.
+Jhon has an idea to make a profit: he buys something and resells it. Of course, this wouldn't give you any profit if you were just going to buy and sell it at the same price. Instead, you will buy it at the lowest possible price and sell it at the highest price.
 
-> Example:
+Write a function that returns the minimum and maximum number from the given list / array.
 
-* orderNumbers(21445) -> 54421
-* orderNumbers(145263) -> 654321
-* orderNumbers(1254859723) -> 9875543221
+* minMax({1,2,3,4,5}) => {1,5}
+* minMax({2334454,5}) => {5,2334454}
+* minMax({1}) => {1,1}
 
+> Exercise Note:
+All arrays or lists

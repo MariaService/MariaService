@@ -1,22 +1,35 @@
 
 package com.sngular.devTrianing2021.exercises;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertArrayEquals;
 
+import java.util.Random;
+
+import org.junit.Before;
 import org.junit.Test;
 
 import com.sngular.devTraining2021.exercises.AlgorithmName;
 
 public class TestsCasesAlgorithmName {
-	@Test
-	public void test() {
+    private Random rand;
 
+    @Before
+    public void initTest() {
+        rand = new Random();
+    }
 
-	    assertEquals(985543221, AlgorithmName.orderNumber(125485923));
-        assertEquals(998765432, AlgorithmName.orderNumber(346789925));
-        assertEquals(98765432, AlgorithmName.orderNumber(29384756));
-        assertEquals(987654321, AlgorithmName.orderNumber(514978236));
+    @Test
+    public void testExampleCases() {
+        assertArrayEquals(new int[]{1,5}, AlgorithmName.minMax(new int[]{1,2,3,4,5}));
+        assertArrayEquals(new int[]{5, 2334454}, AlgorithmName.minMax(new int[]{2334454,5}));
+        assertArrayEquals(new int[]{1, 1}, AlgorithmName.minMax(new int[]{1}));
+    }
 
-	}
-
+    @Test
+    public void minMaxRandomTest() {
+        for(int i = 0; i < 20; i++) {
+            int r = rand.nextInt();
+            assertArrayEquals(new int[]{r, r}, AlgorithmName.minMax(new int[]{r}));
+        }
+    }
 }
